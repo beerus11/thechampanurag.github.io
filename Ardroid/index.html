@@ -9,6 +9,10 @@
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -16,6 +20,15 @@
     <![endif]-->
 </head>
 <body>
+
+<script>
+    $(function () {
+        $('.carousel').carousel({
+            interval: 4000
+        });
+    })
+
+</script>
 <nav class="navbar navbar-inverse navbar-fixed-top " style="background: teal;" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -196,17 +209,7 @@
 
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        $('.carousel').carousel({
-            interval: 4000
-        });
-    })
 
-</script>
+
 </body>
 </html>
